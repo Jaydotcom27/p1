@@ -3,7 +3,7 @@
 ../start.sh
 
 /usr/local/hadoop/bin/hdfs dfs -rm -r /p1/input/
-/usr/local/hadoop/bin/hdfs dfs -rm -r /par1/output/
+/usr/local/hadoop/bin/hdfs dfs -rm -r /p1/output/
 /usr/local/hadoop/bin/hdfs dfs -mkdir -p /p1/input/
 /usr/local/hadoop/bin/hdfs dfs -copyFromLocal ../mapreduce-test-data/hdfstest1/nyc_parking_violations_data.csv  /p1/input/
 
