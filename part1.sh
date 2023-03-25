@@ -8,7 +8,7 @@
 /usr/local/hadoop/bin/hdfs dfs -copyFromLocal ../mapreduce-test-data/hdfstest1/nyc_parking_violations_data.csv  /part1/input/
 
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.1.jar  \
--file freq_hour_mapper.py -mapper freq_hour_mapper.py \
+-file hour_mapper.py -mapper hour_mapper.py \
 -file reducer.py -reducer reducer.py \
 -input /part1/input/* -output /part1/output/Q1/hour
 
